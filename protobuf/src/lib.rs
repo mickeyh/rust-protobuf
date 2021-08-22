@@ -79,11 +79,7 @@ mod buf_read_or_reader;
 #[cfg(doctest)]
 mod doctest_pb;
 
-/// This symbol is in generated `version.rs`, include here for IDE
-#[cfg(never)]
-pub const VERSION: &str = "";
-/// This symbol is in generated `version.rs`, include here for IDE
-#[cfg(never)]
+pub const VERSION: &'static str = "3.0.0-pre";
 #[doc(hidden)]
-pub const VERSION_IDENT: &str = "";
-include!(concat!(env!("OUT_DIR"), "/version.rs"));
+pub const VERSION_IDENT: &'static str = "VERSION_3_0_0_pre";
+pub const VERSION_3_0_0_pre: () = ();
