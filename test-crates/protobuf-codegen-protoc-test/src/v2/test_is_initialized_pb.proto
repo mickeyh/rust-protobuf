@@ -1,5 +1,0 @@
-syntax = "proto2";
-
-message TestIsInitialized {
-  required int32 a = 1;
-}
